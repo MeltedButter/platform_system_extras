@@ -422,7 +422,7 @@ int make_ext4fs(const char *filename, long long len,
 		return EXIT_FAILURE;
 	}
 
-	status = make_ext4fs_internal(fd, NULL, NULL, mountpoint, NULL, 0, 0, 0, 1, 0, sehnd, 0, -1, NULL);
+	status = make_ext4fs_internal(fd, NULL, NULL, mountpoint, NULL, 0, 0, 0, 0, 0, sehnd, 0, -1, NULL);
 	close(fd);
 
 	return status;
